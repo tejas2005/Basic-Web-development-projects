@@ -1,0 +1,43 @@
+
+<html>
+
+    <head>
+        
+        <title>How many fingers?</title>
+ 
+    </head>
+    <body>
+        <p id="p1">let me guess my IQ</p>
+        <p>
+            <select id ="y">
+                <option>0</option>;
+                <option>1</option>;
+                <option>2</option>;
+                <option>3</option>;
+                <option>4</option>;
+                <option>5</option>;
+            </select></p>
+        <button id="btn1">Guess</button>
+        <script type="text/javascript">
+        document.getElementById("btn1").onclick=function(){
+        
+            var x=-1;
+            var y=document.getElementById("y").value;
+            var count=0;
+            while(x!=y)
+                  { 
+                    x=Math.floor((Math.random()*6));
+                    
+                      count++;
+                  
+                  }
+            alert("it took me "+count+" chances to guess "+y);
+            
+        
+        }
+        
+        </script>
+        
+    </body>
+
+</html>
